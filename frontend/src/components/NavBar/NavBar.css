@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: skyblue;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_nav{
+    display: flex;
+    list-style-type: none;
+    gap: 14px;
+    align-items: center;
+    font-weight: 700;
+}
