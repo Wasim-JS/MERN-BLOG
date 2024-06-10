@@ -59,8 +59,21 @@ const loginHandler = RouteErrorHandler(async (req,res,next) => {
 
 })
 
+const getUser = RouteErrorHandler(async (req,res,next)=>{
 
+     let user = req.user
+
+    res.status(200).json({
+
+        success:true,
+        user,
+    })
+
+
+
+})
 export {
     registerHandler,
-    loginHandler
+    loginHandler,
+    getUser
 }

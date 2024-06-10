@@ -31,7 +31,7 @@ const Login = () => {
         },
       
         body:JSON.stringify(loginData)
-      },)
+      })
          
       let data = await login.json()
       if(!data.success) throw new Error(data.message)
